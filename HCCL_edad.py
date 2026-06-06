@@ -2,17 +2,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-HCCL Clustering-Based Detection Module — Optimised Edition
-Integrated into the Hybrid IoV Intrusion Detection System (HCCL-EDAD)
-
-Optimisations vs original:
-  - Fixed OneClassSVM GridSearchCV scorer (was re-fitting inside scorer)
-  - Reduced SVM grid to most effective params (3× fewer combos)
-  - Parallel per-ID model building with joblib (optional)
-  - Eliminated global np.random.seed() side effect
-  - Faster calibration: single vectorised pass per CAN ID
-  - score_dataframe_fast: pre-allocated reason strings, no per-element list ops
-
+HCCL Clustering-Based Detection Module
 """
 
 import os
