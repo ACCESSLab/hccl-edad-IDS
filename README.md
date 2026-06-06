@@ -1,6 +1,6 @@
 # HCCL-EDAD
 
-**A Lightweight Data-Driven Hybrid Intrusion Detection System for CAN-Bus Security in CAVs**
+**A Learning-Based Intrusion Detection System for CAN Bus DoS Attacks in Connected Vehicles**
 
 
 ---
@@ -55,8 +55,7 @@ If you use this code, please cite:
   author  = {Tavasoli, Mahsa and Sarrafzadeh, Abdolhossein and
              Karimoddini, Ali and Khaleghi, Milad and
              Phuapaiboon, Tienake and Pasandi, Hannaneh B.},
-  title   = {A Lightweight Data-Driven Hybrid Intrusion Detection
-             System for {CAN}-Bus Security in {CAVs}},
+  title   = {A Learning-Based Intrusion Detection System for CAN Bus DoS Attacks in Connected Vehicles},
   journal = {IEEE Open Journal of Intelligent Transportation Systems},
   year    = {2026}
 }
