@@ -42,16 +42,7 @@ The **GEM-CAN** dataset is publicly available on Zenodo:
 
 Both methods achieve perfect recall — no attacks are missed. The key differentiator is false positive control: HCCL-EDAD reduces false alarms by **47.2%** compared to CLA-DADA (305 vs. 578 benign messages incorrectly flagged), while the MCC gap (0.8375 vs. 0.662) confirms this advantage under severe class imbalance.
 
----
 
-### Fuzzing Attacks (GEM-CAN)
-
-Two fuzzing variants were evaluated on the same GEM e6 vehicle platform:
-- **Variant A** — random unknown CAN identifiers injected
-- **Variant B** — known CAN identifiers with randomized 8-byte payloads
-
-
-Both fuzzing variants achieve near-perfect recall with very low false positive rates — substantially better than the DoS/tampering scenario — confirming that the layered architecture generalizes effectively across attack categories without retraining.
 
 ---
 
