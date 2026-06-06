@@ -39,10 +39,6 @@ The **GEM-CAN** dataset is publicly available on Zenodo:
 
 ### DoS Flooding and Data Tampering (GEM-CAN)
 
-| Method | Recall | TNR | FPR | MCC |
-|---|---|---|---|---|
-| **HCCL-EDAD** | **100%** | **70.64%** | **29.36%** | **0.8375** |
-| CLA-DADA | 100% | 44.37% | 55.63% | 0.662 |
 
 Both methods achieve perfect recall — no attacks are missed. The key differentiator is false positive control: HCCL-EDAD reduces false alarms by **47.2%** compared to CLA-DADA (305 vs. 578 benign messages incorrectly flagged), while the MCC gap (0.8375 vs. 0.662) confirms this advantage under severe class imbalance.
 
@@ -54,10 +50,6 @@ Two fuzzing variants were evaluated on the same GEM e6 vehicle platform:
 - **Variant A** — random unknown CAN identifiers injected
 - **Variant B** — known CAN identifiers with randomized 8-byte payloads
 
-| Variant | Frames | Recall | FPR | MCC |
-|---|---|---|---|---|
-| **Variant A (Random IDs)** | 766,402 | 99.999% | 0.164% | 0.9990 |
-| **Variant B (Known IDs, Random Payload)** | 736,495 | 100% | 0.795% | 0.9955 |
 
 Both fuzzing variants achieve near-perfect recall with very low false positive rates — substantially better than the DoS/tampering scenario — confirming that the layered architecture generalizes effectively across attack categories without retraining.
 
